@@ -106,6 +106,8 @@ var SVGCache = (function () {
         url: src
       });
 
+      item.state = "loading";
+
       request.success(function (data) {
         item.state = "loaded";
         item.content = data;
