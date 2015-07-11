@@ -33,3 +33,13 @@ Pre-loading SVGs
 ```javascript
 SVGCache.instance.load("/path/to/your.svg");
 ```
+
+
+Building from Source
+--------------------
+
+The compiled/ready-to-use version of react-inline-svg can always be found at `dist/react-inline-svg.js`. To re-build this after making changes in `src`, simply run:
+
+```
+$ gulp
+```
