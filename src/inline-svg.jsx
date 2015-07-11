@@ -12,7 +12,7 @@ class InlineSVG extends React.Component {
 
   render() {
     if(this.state.loading) {
-      <span/>
+      return <span/>
     } else {
       return React.DOM.span({
         className: this.props.className,

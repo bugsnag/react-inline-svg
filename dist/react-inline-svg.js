@@ -29,7 +29,7 @@ var InlineSVG = (function (_React$Component) {
     key: "render",
     value: function render() {
       if (this.state.loading) {
-        React.createElement("span", null);
+        return React.createElement("span", null);
       } else {
         return React.DOM.span({
           className: this.props.className,
