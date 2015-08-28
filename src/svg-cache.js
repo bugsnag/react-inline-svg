@@ -55,10 +55,8 @@ class SVGCache {
       item.state = "loaded";
       item.content = data;
 
-      for(let subscriber of item.subscribers) {
-        if(callback) {
-          callback(subscriber)
-        }
+      if (callback) {
+        item.subscribers.forEach(callback);
       }
     });
 
