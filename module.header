@@ -1,0 +1,9 @@
+(function (factory) {
+    if (typeof define === "function" && define.amd) {
+        define(["react", "jquery"], factory);
+    } else if (typeof module !== "undefined" && module.exports) {
+        module.exports = factory(require("react"), require("jquery"));
+    } else {
+        window.InlineSVG = factory(window.React, window.jQuery);
+    }
+})(function (React, jQuery) {
