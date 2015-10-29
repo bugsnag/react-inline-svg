@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "build": "browserify main.js -o bundle.js"
+  },
+  "devDependencies": {
+    "browserify": "^12.0.0",
+    "jquery": "^2.1.4",
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0",
+    "react-inline-svg": "file:../../"
+  }
+}

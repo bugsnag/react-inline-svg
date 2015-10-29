@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <script src="https://fb.me/react-0.14.0.js"></script>
+    <script src="https://fb.me/react-dom-0.14.0.js"></script>
+    <script src="http://code.jquery.com/jquery-2.1.4.js"></script>
+    <script src="../dist/react-inline-svg.js"></script>
+</head>
+<body>
+    <div id="app"></div>
+    <script>
+        var HelloWorld = React.createClass({
+            render: function() {
+                return React.createElement(InlineSVG, {
+                    src: "https://dbd6j53uzcole.cloudfront.net/assets/images/website/logo-grey.4979e9f5.svg",
+                    className: "css-class"
+                });
+            }
+        });
+
+        ReactDOM.render(React.createElement(HelloWorld, null), document.getElementById('app'));
+    </script>
+</body>
+</html>

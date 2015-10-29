@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <script src="http://requirejs.org/docs/release/2.1.20/minified/require.js"></script>
+    <script>
+        requirejs.config({
+            paths: {
+                react: 'https://fb.me/react-0.14.0',
+                'react-dom': 'https://fb.me/react-dom-0.14.0',
+                jquery: 'http://code.jquery.com/jquery-2.1.4',
+                'react-inline-svg': '../dist/react-inline-svg'
+            }
+        });
+    </script>
+</head>
+<body>
+    <div id="app"></div>
+    <script>
+        requirejs(['react', 'react-dom', 'react-inline-svg'], function (React, ReactDOM, InlineSVG) {
+            var HelloWorld = React.createClass({
+                render: function() {
+                    return React.createElement(InlineSVG, {
+                        src: "https://dbd6j53uzcole.cloudfront.net/assets/images/website/logo-grey.4979e9f5.svg",
+                        className: "css-class"
+                    });
+                }
+            });
+
+            ReactDOM.render(React.createElement(HelloWorld, null), document.getElementById('app'));
+        });
+    </script>
+</body>
+</html>
