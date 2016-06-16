@@ -51,7 +51,7 @@ class SVGCache {
 
     item.state = "loading";
 
-    request.success(function (data) {
+    request.done(function (data) {
       item.state = "loaded";
       item.content = data;
 
