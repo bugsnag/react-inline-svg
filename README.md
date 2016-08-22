@@ -7,9 +7,9 @@ React Component to load and inline SVG images, allowing you to target and style 
 Features
 --------
 - Easy to use, just add `InlineSVG` components
-- Loads SVGs automatically using a jQuery `$.ajax` request
+- Loads SVGs automatically using a `XMLHttpRequest`
 - Loads each SVG exactly once, and caches them for repeated use
-- Can preload SVGs in advance using `SVGCache`
+- Can preload SVGs in advance using `InlineSVG.cache`
 
 
 Usage
@@ -31,7 +31,7 @@ Pre-loading SVGs
 ----------------
 
 ```javascript
-SVGCache.instance.load("/path/to/your.svg");
+InlineSVG.cache.load("/path/to/your.svg");
 ```
 
 
