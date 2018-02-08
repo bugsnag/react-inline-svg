@@ -14,12 +14,14 @@ class InlineSVG extends React.Component {
     if(this.state.loading) {
       return <span/>
     } else {
-      return React.DOM.span({
-        className: this.props.className,
-        dangerouslySetInnerHTML: {
-          __html: SVGCache.instance.getItem(this.props.src).content
-        }
-      });
+      return (
+        <span
+          className={this.props.className}
+          dangerouslySetInnerHTML={{
+            __html: SVGCache.instance.getItem(this.props.src).content
+          }}
+        />
+      );
     }
   }
 }
